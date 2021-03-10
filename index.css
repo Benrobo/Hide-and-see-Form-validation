@@ -1,0 +1,293 @@
+ body{
+   background: rgb(255, 253, 253);
+}
+/*
+#wrong{
+    width:250px;
+    color: red;
+    height: 30px;
+    margin: 10px;
+    visibility: hidden;
+}
+
+#right{
+    width:250px;
+    color: green;
+    height: 30px;
+    margin: 10px;
+    visibility: hidden;
+}
+
+img{
+    width:250px;
+    height: 250px;
+}
+
+#dd{
+    width: 200px;
+    height: 200px;
+    background: blue;
+    margin: 50px;
+    visibility: hidden;
+}
+.clkbox{
+    width: 160px;
+    height: 160px;
+    padding: 12px;
+    margin-left:200px;
+    text-align: center;
+    background: black;
+    border-radius: 50%;
+    color: #fff;
+    padding-top: 20px;
+    margin-left: 499px;
+    visibility: hidden;
+}
+#clkbox{
+    width: 60px;
+    height: 60px;
+    padding: 12px;
+    margin: 15px;
+    text-align: center;
+    background: black;
+    border-radius: 50%;
+    color: #fff;
+    padding-top: 20px;
+    font-size: 65px;
+    
+}
+
+#str{
+    width: 120px;
+    height: 50px;
+    margin: 90px 10px 10px -170px;
+    background: blue;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 20px;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0);
+    cursor: pointer;
+}
+#stp{
+    width: 120px;
+    height: 50px;
+    margin: -250px -210px 0px 60px;
+    background: red;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 20px;
+    box-shadow: 0px 0px 15px rgb(29, 28, 28);
+    cursor: pointer;
+}
+
+button:focus{
+    outline: none;
+}
+
+span{
+    width:100px;
+    background: red;
+    position: relative;
+    top:50%;
+    left:50%;
+    height: 100px;
+}
+
+
+.roll{
+    position: fixed;
+    display: flex;
+    align-content: center;
+    padding:220px 0px 100px 520px;
+    top: 0px;
+    left:0px;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,.9);
+    
+}
+h1{
+    font-family: verdana;
+    margin: 150px 100px 100px -150px;
+    color:#fff
+}
+.roll img{
+    font-size: 50px !important;
+    
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+}
+.roll .two{
+    margin-left: -50px;
+}
+.one{
+    animation:one 10s linear infinite;
+}
+.two{
+    animation:two 10s linear infinite;
+}
+
+@keyframes one{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes two{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+*/
+input[type="text"]{
+    width: 400px;
+    margin: 2px;
+    float: left;
+}
+
+.err #corr{
+    color: green !important;
+    visibility: hidden;
+}
+.err #wrr{
+    color: red !important;
+    visibility: hidden;
+}
+body{
+    margin: 0px;
+    left:0px;
+    padding:0px ;
+
+}
+
+.overlay{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    background: rgba(0,0,0,.7);
+}
+.form-validation{
+    width: 350px;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border: 2px solid #000;
+    margin: 0px auto;
+    margin-top: 100px;
+    padding: 12px;
+    border-radius: 10px;
+    background: #fff;
+}
+p{
+  
+    font-style: italic;
+    margin-left: 13px;
+}
+form{
+    margin-top: -20px;
+}
+.form-validation input{
+    width: 290px;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.form-validation .btn{
+    margin: 10px 10px 10px 30px;
+    width: 90px;
+    /* margin: 10px; */
+    border-radius: 30px;
+}
+
+.form-validation .btn-primary{
+    float: right;
+    position: relative;
+    left: 150px;
+    color: #000;
+    border: 2px solid blue;
+    background: none;
+    font-weight:900;
+}
+
+.form-validation .btn-danger{
+    float: left;
+    position: relative;
+    left: 0px;
+    top: -55px;
+    color: #000;
+    border: 2px solid rgb(238, 2, 2);
+    background: none;
+    font-weight:900;
+}
+.btn-danger:hover{
+    background: red;
+    border: 2px solid rgb(0, 0, 0);
+    color: #fff;
+    
+}
+.btn-primary:hover{
+    background: rgb(4, 20, 241);
+    border: 2px solid rgb(0, 0, 0);
+    color: #fff;
+}
+
+
+/* hidden content */
+
+.hidden-content{
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    visibility: hidden;
+}
+.imgt{
+    width: 100px;
+    height: 100px;
+    animation: roll-left 5s linear infinite;
+}
+.imgo{
+    width: 100px;
+    height: 100px;
+    animation: roll-right 5s linear infinite;
+}
+
+@keyframes roll-left{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes roll-right{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
+
