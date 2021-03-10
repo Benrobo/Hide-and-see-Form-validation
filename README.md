@@ -1,6 +1,6 @@
 # Hide-and-see-Form-validation
 
-[Test Iamge](https://github.com/Benrobo/Hide-and-see-Form-validation/blob/master/Capture.PNG)
+[!Test Iamge](https://github.com/Benrobo/Hide-and-see-Form-validation/blob/master/Capture.PNG)
 
 
 this is just a simple form validator using:
